@@ -10,8 +10,8 @@ def main(list1,n):
     if n > 0:
         k = list1[-1::-n]
     else:
-        k = list1[-1::n]
+        k = list1[0::-n]
     return k
 
-x=main(['a', 'b', 'c', 'd', 'e', 'f'], -1)
+x=main(['a', 1, 'b', 2, 'c', 3, 'd', 4], 2)
 print(x)
