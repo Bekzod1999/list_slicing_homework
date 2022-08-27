@@ -7,11 +7,17 @@ def main(list1,n):
     Returns:
         list: return answer.
     """
-    if n >= 0:
-       k = list1[n:]
-    else:
-        k = list1[n::-1]
-    return k
+    # if n > 0:
+    #    k = list1[n:]
+    # else:
+    #     k = list1[n::-1]
+    # return k
 
-x=main(['a', 'b', 'c', 'd', 'e', 'f'], -1)
+    if n > 0:
+        k = list1[0::n]
+    else:
+        k = list1[-1::-n]
+    return k
+    
+x=main(['a', 1, 'b', 2, 'c', 3, 'd', 4], 2)
 print(x)
