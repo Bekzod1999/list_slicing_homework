@@ -13,11 +13,18 @@ def main(list1,n):
     #     k = list1[n::-1]
     # return k
 
+
+    # if n > 0:
+    #     k = list1[-1::-n]
+    # else:
+    #     k = list1[0::-n]
+    # return k
+
     if n > 0:
         k = list1[0::n]
     else:
-        k = list1[-1::-n]
+        k = list1[-1::n]
     return k
     
-x=main(['a', 1, 'b', 2, 'c', 3, 'd', 4], 2)
+x=main(['a', 'b', 'c'], 2)
 print(x)
